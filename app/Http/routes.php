@@ -12,5 +12,10 @@
 */
 
 $app->get('/', function () use ($app) {
-    return $app->version();
+    $description = "API created by Lasse Gøransson to able access to energi Fyn data more conveniently";
+    return $app->version().'<br>'.$description;
 });
+
+
+$app->get('consumptiondata/{startdate}/{enddate}','ConsumptionDataController@get');
+$app->post('consumptiondata','ConsumptionDataController@store');
