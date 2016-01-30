@@ -14,7 +14,7 @@ class CreateTableConsumptionData extends Migration
     {
         Schema::create('consumption_datas', function (Blueprint $table) {
             $table->increments('id');
-            $table->dateTime('date');
+            $table->dateTime('date')->unique();
             $table->float('kwh');
             $table->timestamps();
         });

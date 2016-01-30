@@ -23,6 +23,6 @@ class ConsumptionControllerTest extends TestCase
 
     public function test_that_i_can_get_all_consumptionData_as_json()
     {
-        $this->get('/consumptiondata')->seeJson();
+        $this->get('/consumptiondata/all')->seeJson();
     }
 }

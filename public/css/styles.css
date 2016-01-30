@@ -1,0 +1,15 @@
+#app {
+  background: white; }
+
+body {
+  background: #eee; }
+
+.header {
+  padding: 10px; }
+
+.sidebar-wrapper {
+  border-right: 1px solid #8c8c8c; }
+  .sidebar-wrapper ul {
+    list-style: none; }
+
+/*# sourceMappingURL=styles.css.map */
